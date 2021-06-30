@@ -607,6 +607,9 @@ linters:
     - bodyclose
     - ifshort
     - revive
+    - gosec
+    - gofmt
+    - gocritic
   disable:
     - deadcode
     - gochecknoglobals
@@ -620,7 +623,6 @@ issues:
   # it can be disabled by `exclude-use-default: false`. To list all
   # excluded by default patterns execute `golangci-lint run --help`
   exclude:
-    - abcdef
 
   # Excluding configuration per-path, per-linter, per-text and per-source
   exclude-rules:
@@ -678,7 +680,7 @@ issues:
   new: false
 
   # Show only new issues created after git revision `REV`
-  new-from-rev: REV
+  new-from-rev: ""
 
   # Show only new issues created in git patch with set file path.
   new-from-patch:
