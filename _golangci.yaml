@@ -595,11 +595,7 @@ linters-settings:
 
 linters:
   enable:
-    - errcheck
-    - gosimple
     - govet
-    - ineffassign
-    - staticcheck
     - structcheck
     - typecheck
     - unused
@@ -611,7 +607,11 @@ linters:
     - gofmt
     - gocritic
   disable:
+    - staticcheck
+    - gosimple
     - deadcode
+    - errcheck
+    - ineffassign
     - gochecknoglobals
     - gochecknoinits
   fast: false
