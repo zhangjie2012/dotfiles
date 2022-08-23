@@ -9,7 +9,7 @@ WSL 设置 HTTP(s) 代理脚本 `wsl_proxy.sh`
 在 `.zshrc` 中添加：
 
 ```sh
-alias proxy_set="sh /home/zhangjie/dotfiles/wsl_proxy.sh set"
-alias proxy_unset="sh /home/zhangjie/dotfiles/wsl_proxy.sh unset"
-alias proxy_test="sh /home/zhangjie/dotfiles/wsl_proxy.sh test"
+alias proxy_set="source /home/zhangjie/dotfiles/wsl_proxy.sh set"
+alias proxy_unset="source /home/zhangjie/dotfiles/wsl_proxy.sh unset"
+alias proxy_test="/home/zhangjie/dotfiles/wsl_proxy.sh test"
 ```

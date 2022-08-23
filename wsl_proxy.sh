@@ -12,8 +12,8 @@ set_proxy(){
     export https_proxy="${PROXY_HTTP}"
     export HTTPS_proxy="${PROXY_HTTP}"
 
-    export ALL_PROXY="${PROXY_SOCKS5}"
-    export all_proxy=${PROXY_SOCKS5}
+    export all_proxy="${PROXY_HTTP}"
+    export ALL_PROXY="${PROXY_HTTP}"
 }
 
 unset_proxy(){
@@ -30,6 +30,8 @@ test_setting(){
     echo "WSL ip:" ${wslip}
     echo "Current proxy:" $https_proxy
 }
+
+echo $1
 
 if [ "$1" = "set" ]
 then
