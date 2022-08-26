@@ -1,0 +1,23 @@
+#+TITLE: config files
+
+常用工具配置文件：Vim, tmux, eslint, bash，除了 [[https://github.com/zhangjie2012/emacs.d][emacs]]。
+
+* 添加软连接
+
+=ln -s dotfiles/_golangci.yaml .golangci.yaml=
+
+* WSL 设置 HTTP(s) 代理
+
+代理脚本 `wsl_proxy.sh` [fn:1]
+
+在 =.zshrc= 中添加：
+
+#+begin_src sh
+  alias proxy_set="source /home/zhangjie/dotfiles/wsl_proxy.sh set"
+  alias proxy_unset="source /home/zhangjie/dotfiles/wsl_proxy.sh unset"
+  alias proxy_test="/home/zhangjie/dotfiles/wsl_proxy.sh test"
+#+end_src
+
+* Footnotes
+
+[fn:1] https://zinglix.xyz/2020/04/18/wsl2-proxy/
