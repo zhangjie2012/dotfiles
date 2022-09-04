@@ -4,7 +4,11 @@
 
 * 添加软连接
 
-=ln -s dotfiles/_golangci.yaml .golangci.yaml=
+#+begin_src sh
+  cd ~
+  ln -s dotfiles/_golangci.yaml .golangci.yaml
+  ln -s dotfiles/_flake8 .flake8
+#+end_src
 
 * WSL 设置 HTTP(s) 代理
 
