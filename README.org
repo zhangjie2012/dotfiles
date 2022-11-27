@@ -8,11 +8,13 @@
   cd ~
   ln -s dotfiles/_golangci.yaml .golangci.yaml
   ln -s dotfiles/_flake8 .flake8
+  ln -s dotfiles/_vimrc .vimrc
+  ln -s dotfiles/_tmux.conf .tmux.conf
 #+end_src
 
 * WSL 设置 HTTP(s) 代理
 
-代理脚本 `wsl_proxy.sh` [fn:1]
+代理脚本 =wsl_proxy.sh= [fn:1]
 
 在 =.zshrc= 中添加：
 
@@ -21,6 +23,16 @@
   alias proxy_unset="source /home/zhangjie/dotfiles/wsl_proxy.sh unset"
   alias proxy_test="/home/zhangjie/dotfiles/wsl_proxy.sh test"
 #+end_src
+
+* zsh
+
+#+begin_src sh
+  apt install zsh
+  https_proxy="http://127.0.0.1:12333"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#+end_src
+
+plugins 添加 fzf 和 autojump。
 
 * Footnotes
 
