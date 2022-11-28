@@ -32,7 +32,21 @@
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 #+end_src
 
-plugins 添加 fzf 和 autojump。
+=.zshrc= 配置
+
+1. plugins 添加 fzf 和 autojump
+2. 文件尾部添加
+   #+begin_src sh
+     export TERM=xterm-256color
+
+     export CLICOLOR=1
+     export LSCOLORS=ExFxBxDxCxegedabagacad
+
+     export NODE_OPTIONS="--max-old-space-size=8192"
+
+     export FZF_DEFAULT_COMMAND="fd --type f --color=always --exclude .git --exclude Library --exclude node_modules --exclude .wax"
+     export FZF_DEFAULT_OPTS="--ansi"
+   #+end_src
 
 * Footnotes
 
