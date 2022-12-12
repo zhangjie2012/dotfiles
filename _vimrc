@@ -28,7 +28,7 @@ filetype plugin indent on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-colorscheme desert
+" colorscheme desert
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface & Display
@@ -104,4 +104,3 @@ endif " has(autocmd)
 
 " 保存自动删除行位空格
 autocmd BufWritePre * :%s/\s\+$//e
-
