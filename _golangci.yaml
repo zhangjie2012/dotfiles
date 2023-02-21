@@ -30,17 +30,15 @@ linters-settings:
 linters:
   disable-all: true
   enable:
+    - errcheck
+    - gosimple
     - govet
-    - structcheck
+    - ineffassign
+    - staticcheck
     - typecheck
     - unused
-    - varcheck
-    - bodyclose
-    - ifshort
     - revive
-    - gosec
-    - gofmt
-    - gocritic
+    - bodyclose
   fast: false
 
 issues:
