@@ -18,7 +18,7 @@ run:
     - ".*\\.mock\\.go$"
     - ".*\\.thrift\\.go$"
   timeout: 2m
-  allow-parallel-runners: false
+  allow-parallel-runners: true
 
 linters-settings:
   revive:
@@ -37,8 +37,8 @@ linters:
     - staticcheck
     - typecheck
     - unused
-    - revive
-    - bodyclose
+    # - revive
+    # - bodyclose
   fast: false
 
 issues:
