@@ -10,6 +10,7 @@
   ln -s dotfiles/_flake8 .flake8
   ln -s dotfiles/_vimrc .vimrc
   ln -s dotfiles/_tmux.conf .tmux.conf
+  ln -s dotfiles/_eslintrc.json .eslintrc.json
 #+end_src
 
 * WSL 设置 HTTP(s) 代理
