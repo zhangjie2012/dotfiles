@@ -22,23 +22,23 @@ run:
 
 linters-settings:
   revive:
+    ignore-generated-header: true
     rules:
-      revive:
-        - name: var-naming
-          disabled: true
+      - name: var-naming
+        disabled: true
 
 linters:
   disable-all: true
   enable:
     - errcheck
+    - gofmt
     - gosimple
     - govet
     - ineffassign
+    - revive
     - staticcheck
     - typecheck
     - unused
-    # - revive
-    # - bodyclose
   fast: false
 
 issues:
