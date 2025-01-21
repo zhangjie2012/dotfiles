@@ -1,5 +1,4 @@
 [flake8]
-# E501: line too long
-ignore = E501
-exclude = .git,__pycache__
+ignore = E501,D103,C901
+exclude = .git,__pycache__,docs/source/conf.py,old,build,dist
 max-complexity = 10
