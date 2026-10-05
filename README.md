@@ -1,0 +1,55 @@
+# config files
+
+常用工具配置文件：Vim, tmux, eslint, bash，除了 [emacs](https://github.com/zhangjie2012/emacs.d)。
+
+## 添加软连接
+
+```sh
+cd ~
+ln -s dotfiles/_golangci.yaml .golangci.yaml
+ln -s dotfiles/_flake8 .flake8
+ln -s dotfiles/_vimrc .vimrc
+ln -s dotfiles/_tmux.conf .tmux.conf
+ln -s dotfiles/_eslintrc.json .eslintrc.json
+```
+
+## WSL 设置 HTTP(s) 代理
+
+代理脚本 `wsl_proxy.sh` [^1]
+
+在 `.zshrc` 中添加：
+
+```sh
+alias proxy_set="source /home/zhangjie/dotfiles/wsl_proxy.sh set"
+alias proxy_unset="source /home/zhangjie/dotfiles/wsl_proxy.sh unset"
+alias proxy_test="/home/zhangjie/dotfiles/wsl_proxy.sh test"
+```
+
+## zsh
+
+```sh
+apt install zsh
+https_proxy="http://127.0.0.1:12333"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+`.zshrc` 配置
+
+1. plugins 添加 fzf 和 autojump
+2. 文件尾部添加
+
+   ```sh
+   export TERM=xterm-256color
+
+   export CLICOLOR=1
+   export LSCOLORS=ExFxBxDxCxegedabagacad
+
+   export NODE_OPTIONS="--max-old-space-size=8192"
+
+   export FZF_DEFAULT_COMMAND="fd --type f --color=always --exclude .git --exclude Library --exclude node_modules --exclude .wax"
+   export FZF_DEFAULT_OPTS="--ansi"
+   ```
+
+## Footnotes
+
+[^1]: https://zinglix.xyz/2020/04/18/wsl2-proxy/
