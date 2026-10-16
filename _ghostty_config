@@ -10,6 +10,12 @@ cursor-style-blink = false
 shell-integration-features = no-cursor
 
 copy-on-select = clipboard
+selection-clear-on-copy = false
+selection-clear-on-typing = true
+right-click-action = copy-or-paste
+mouse-shift-capture = never
 
 keybind = super+shift+comma=reload_config
+keybind = super+c=copy_to_clipboard
+keybind = super+v=paste_from_clipboard
 
