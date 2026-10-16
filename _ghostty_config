@@ -1,0 +1,15 @@
+theme = Catppuccin Mocha
+background-opacity = 0.90
+
+font-family = JetBrains Mono
+font-size = 15
+adjust-cell-height = 15%
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+copy-on-select = clipboard
+
+keybind = super+shift+comma=reload_config
+
