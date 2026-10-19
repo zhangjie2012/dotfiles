@@ -1,0 +1,198 @@
+{
+  // =========================================================
+  // Window
+  // =========================================================
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": false,
+  // =========================================================
+  // Editor
+  // =========================================================
+  "editor.fontFamily": "'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace",
+  "editor.fontSize": 14.5,
+  "editor.lineHeight": 1.5,
+  "editor.letterSpacing": 0,
+  "editor.fontLigatures": true,
+  "editor.lineNumbers": "on",
+  "editor.glyphMargin": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.selectionHighlight": false,
+  "editor.occurrencesHighlight": "singleFile",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.tabCompletion": "on",
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.wordWrap": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": false,
+  "editor.guides.indentation": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "selection",
+  "editor.renderControlCharacters": false,
+  "editor.stickyScroll.enabled": false,
+  // =========================================================
+  // Appearance
+  // =========================================================
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "editorLineNumber.foreground": "#f0f0f0",
+    "editorLineNumber.activeForeground": "#333333"
+  },
+  "workbench.activityBar.location": "top",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.restoreViewState": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none",
+  "workbench.preferredLightColorTheme": "Light Modern",
+  // =========================================================
+  // Files
+  // =========================================================
+  "files.autoSave": "afterDelay",
+  "files.hotExit": "onExitAndWindowClose",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.encoding": "utf8",
+  // =========================================================
+  // Search
+  // =========================================================
+  "search.followSymlinks": false,
+  "search.smartCase": true,
+  // =========================================================
+  // Terminal
+  // =========================================================
+  "terminal.integrated.fontFamily": "'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace",
+  "terminal.integrated.fontSize": 14.5,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.smoothScrolling": true,
+  // =========================================================
+  // Python
+  // =========================================================
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.indexing": true,
+  "python.analysis.typeCheckingMode": "basic",
+  // =========================================================
+  // Markdown
+  // =========================================================
+  "[markdown]": {
+    "editor.fontFamily": "'Sarasa Mono SC', monospace",
+    "editor.fontSize": 16,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  // =========================================================
+  // JavaScript / TypeScript
+  // =========================================================
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // =========================================================
+  // SQL
+  // =========================================================
+  "[sql]": {
+    "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc",
+    "editor.formatOnSave": true
+  },
+  // =========================================================
+  // JSON
+  // =========================================================
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // =========================================================
+  // Go
+  // =========================================================
+  "go.useLanguageServer": true,
+  "go.formatTool": "default",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[go.mod]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true
+  },
+  "gopls": {
+    "usePlaceholders": false,
+    "analyses": {
+      "nilness": true,
+      "unusedparams": true,
+      "unusedwrite": true
+    }
+  },
+  "go.lintTool": "golangci-lint-v2",
+  "go.lintOnSave": "package",
+  "go.lintFlags": ["--config=/Users/bytedance/.config/vscode-go/golangci.yaml"],
+  "go.enableCodeLens": {
+    "runtest": false
+  },
+  // =========================================================
+  // Git
+  // =========================================================
+  "git.autofetch": true,
+  "scm.diffDecorationsGutterPattern": {
+    "added": true
+  },
+  "git.openRepositoryInParentFolders": "never",
+  // =========================================================
+  // Thrift
+  // =========================================================
+  "[thrift]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false
+  },
+  // =========================================================
+  // YAML
+  // =========================================================
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  // =========================================================
+  // Chat / AI
+  // =========================================================
+  "chat.disableAIFeatures": true,
+  "chat.extensionUnification.enabled": false,
+  "chat.titleBar.signIn.enabled": false,
+  "workbench.commandPalette.showAskInChat": false,
+  "workbench.browser.enableChatTools": false,
+  "chat.checkpoints.enabled": false,
+  "chat.editing.confirmEditRequestRemoval": false,
+  "chat.editing.confirmEditRequestRetry": false,
+  "chat.undoRequests.restoreInput": false,
+  "chat.agent.sandbox.allowAutoApprove": false,
+  "chat.agent.sandbox.allowUnsandboxedCommands": false
+}
