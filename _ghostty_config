@@ -6,8 +6,8 @@ window-padding-x = 16
 window-padding-y = 12
 
 font-family = JetBrains Mono
-font-size = 15
-adjust-cell-height = 15%
+font-size = 14.5
+adjust-cell-height = 1.5
 
 cursor-style = block
 cursor-style-blink = false
