@@ -4,16 +4,16 @@
 
 ## 文件说明
 
-| 本仓库文件 | 目标位置 | 说明 |
-| --- | --- | --- |
-| `_golangci.yaml` | `~/.golangci.yaml` | golangci-lint 配置 |
-| `_flake8` | `~/.flake8` | flake8 配置 |
-| `_vimrc` | `~/.vimrc` | Vim 配置 |
-| `_tmux.conf` | `~/.tmux.conf` | tmux 配置 |
-| `_eslintrc.json` | `~/.eslintrc.json` | ESLint 配置 |
-| `_bashrc` | `~/.bashrc` | bash 配置 |
-| `Zenburn.itermcolors` 等 | 手动导入 | iTerm2 配色方案 |
-| `wsl_proxy.sh` | 仓库内引用 | WSL HTTP(S) 代理脚本 |
+| 本仓库文件               | 目标位置           | 说明                 |
+| ------------------------ | ------------------ | -------------------- |
+| `_golangci.yaml`         | `~/.golangci.yaml` | golangci-lint 配置   |
+| `_flake8`                | `~/.flake8`        | flake8 配置          |
+| `_vimrc`                 | `~/.vimrc`         | Vim 配置             |
+| `_tmux.conf`             | `~/.tmux.conf`     | tmux 配置            |
+| `_eslintrc.json`         | `~/.eslintrc.json` | ESLint 配置          |
+| `_bashrc`                | `~/.bashrc`        | bash 配置            |
+| `Zenburn.itermcolors` 等 | 手动导入           | iTerm2 配色方案      |
+| `wsl_proxy.sh`           | 仓库内引用         | WSL HTTP(S) 代理脚本 |
 
 ## 添加软连接
 
